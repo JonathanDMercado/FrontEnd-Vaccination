@@ -1,0 +1,559 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@200;400;600&display=swap&family=Be+Vietnam+Pro:wght@800&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+
+:root {
+    /* Fuentes */
+    --fuente-titulo:  'Montserrat', sans-serif;
+    --funte-titulo-bold: 'Be Vietnam Pro', sans-serif;
+    --fuente-principal:  'Outfit', sans-serif;
+
+    /* Tamaño */
+    --delgada: 200;
+    --regular : 400;
+    --grande: 600;
+
+    /* Colores */
+    --azul: #2448da;
+    --azul-fuerte: #1f3e72;
+    --celeste: #e7f3fc;
+    --gris: #697383;
+    --blanco: #ffffff;
+    --amarillo: #ffbb00;   
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 10px;
+    line-height: 1;    
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulo);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+/* Header */
+
+.header{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgb(222, 240, 255) 55%);
+    padding: 1.5rem;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p{
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--azul);
+}
+
+.navegacion{
+    display: flex;
+    gap: 3rem;
+    font-weight:700;
+}
+
+.navegacion a{
+    color: var(--gris);
+    font-size: 20px;
+}
+
+.boton-nav a{
+    list-style: none;
+    padding-left: 0;
+    background-color: var(--azul);
+    padding: 1rem 2rem 1rem 2rem;
+    color: var(--blanco);
+    box-shadow: 5px 10px 15px rgba(222, 240, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+}
+
+.boton-nav:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 15px rgba(222, 240, 255, .22);
+}
+
+/* Fight Virus */
+
+.cabecera{
+    position: relative;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.cb-1{
+     padding-left: 8rem;
+}
+
+.cb-1 h1{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 50px;
+    width: 90%;
+    text-align: left;
+}
+
+.cb-1 p{
+    color: var(--gris);
+    font-size: 25px;
+}
+
+.etiquetas{
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 300px;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.fa-solid{
+    color: var(--amarillo);
+}
+
+.fa-clock{
+    color: var(--azul);
+}
+
+.etiqueta{
+    margin-top: 8rem;
+    font-weight: 800;
+}
+
+.cb-2{
+    background-blend-mode: soft-light;
+    height: 70rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:relative;
+    width: 100%;
+}
+
+/* Schedule */
+.banner{
+    position: absolute;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+    border-radius: 1rem;
+    margin: -16rem 1rem 1rem 15rem;
+    background-color: var(--blanco);
+    font-size: 25px;
+}
+
+.content-bann {
+    font-weight: 800;
+}
+
+.cnt-ban i{
+    color: var(--azul);
+}
+
+.cnt-ban p{
+    padding-left: 1rem;
+}
+
+.btn-bann{
+    padding: 2rem;
+}
+
+.btn-bann a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 20px;
+}
+
+/* Image Vaccines */
+.carrusel{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.carrusel img{
+    object-fit: cover;
+
+}
+/* Why Should */
+
+.informacion h2{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 50px;
+    width: 90%;
+    text-align: left;
+}
+
+.informacion p{
+    color: var(--gris);
+    font-size: 24px;
+    width: 50%;
+}
+
+.tarjetas{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.tarjeta{
+    box-shadow: 5px 10px 15px rgba(222, 240, 255);
+    border-radius: 20px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px rgba(222, 240, 255);
+}
+
+.tarjeta i{
+    color: var(--azul);
+    background-color: var(--celeste);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 20px;
+}
+
+.tarjeta h3{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 25px;
+    width: 100%;
+    text-align: left;
+}
+
+.tarjeta p{
+    color: var(--gris);
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+/* Preparations Before */
+
+.cnt-preparation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.img-preparation{
+    margin-top: 50px;
+    width: 100%;
+    height: 60rem;
+    padding-left: 8rem;
+    padding-bottom: 1rem;
+    background-color: #2b6fdd;
+    background-size: 130%;
+    background-image: url(../img/nurse\ girl\ yellow\ trim2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+} 
+
+.contenido-preparacion h2{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 50px;
+    width: 100%;
+    text-align: left;
+}
+
+.contenido-preparacion p{
+    color: var(--gris);
+    font-size: 25px;
+    width: 100%;
+}
+
+.acordeon{
+    margin-top: 2rem;
+    padding: 4rem;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.accordion {
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 20px;
+    text-align: left;
+    background-color: var(--blanco);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    transition-duration: 0.5s;
+    box-shadow: 5px 10px 15px rgba(222, 240, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion:hover {
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px rgba(222, 240, 255);
+}
+  
+  .accordion i{
+    font-size: 20px;
+    color: var(--azul);
+    padding-right: 1rem;
+    background-color: var(--celeste);
+    padding: .8rem;
+    border-radius: .5rem;
+  }
+
+  .active, .accordion:hover {
+    transition-duration: 0.5s;
+    background-color: var(--celeste);
+  }
+  
+  .panel {
+    transition-duration: 0.5s;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .panel p{
+    color: var(--gris);
+    font-size: 1.6rem;
+  }
+
+
+/* Emergency Contact */
+.cnt-contact{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.ctn-ctc h2{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 50px;
+    width: 100%;
+    text-align: left;
+  }
+
+.ctn-ctc p{
+    color: var(--gris);
+    font-size: 25px;
+    width: 90%;
+}
+
+.img-contact{
+    margin-top: 10rem;
+    padding-left: 8rem;
+    background-image: url(../img/nurser\ man\ alpha\ trim.png);
+    background-color: #2b6fdd;
+    height: 50rem;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.cnt-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+    padding: 10rem 2rem 2rem 0;
+}
+
+.cnt-tarjeta{
+    padding: 40px;
+    box-shadow: 5px 10px 15px rgba(222, 240, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cnt-tarjeta:hover {
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px rgba(222, 240, 255);
+}
+
+.contenido-trj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-trj i{
+    color: var(--azul);
+    font-size: 20px;
+    background-color: var(--celeste);
+    padding: 10px;
+    border-radius: .5rem;
+    margin-right: 1rem;
+}
+
+.contenido-trj h3{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 23px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.contenido-trj p{
+    color: var(--gris);
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.btn-celeste{
+    background-color: var(--celeste);
+    color: var(--azul);
+    font-weight: var(--grande);
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 15px;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+    font-size: 25px;
+}
+
+.btn-celeste:hover{
+    transition-duration: 0.4s;
+    background-color: var(--azul);
+    color: var(--celeste);
+    font-weight: var(--regular);
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+
+.ctn-foot{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer{    
+    background-color: var(--celeste); 
+    padding: 4rem;
+}
+.leyenda{    
+    color: var(--gris);
+    font-size: 25px;
+    width: 60%;
+
+}
+
+.foot-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.ft-mnu h2{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.lista li{
+    margin-top: 2rem;
+    list-style: none; 
+}
+
+.lista a{
+    color: var(--gris);
+    font-size: 20px;   
+}
+
+.copy p{
+    color: var(--gris);
+    font-size: 20px;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
